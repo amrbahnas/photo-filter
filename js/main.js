@@ -24,6 +24,7 @@ upload.addEventListener("change", function () {
     file.readAsDataURL(upload.files[0])
     file.onload = function () {
         img.src = file.result;
+        resetAll();
     }
 })
 
@@ -44,7 +45,10 @@ filters.forEach((filter) => {
     }
 })
 
-reset.onclick = function () {
+reset.onclick = resetAll();
+
+
+function resetAll() {
     img.style.filter = `none`;
     saturate.value = "100";
     contrast.value = "100";
@@ -57,4 +61,3 @@ reset.onclick = function () {
         span.innerHTML = span.dataset.precentage;
     })
 }
-
