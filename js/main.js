@@ -26,7 +26,10 @@ upload.addEventListener("change", function () {
         img.src = file.result;
         resetAll();
     }
+    document.querySelector(".left").style.display = "flex";
+    document.querySelector(".left label").style.display = "block";
 })
+
 
 
 let filters = document.querySelectorAll("ul li input");
