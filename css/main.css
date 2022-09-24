@@ -6,15 +6,9 @@
     margin: 0;
 }
 
-
-
-html {
-    scroll-behavior: smooth;
-}
-
 body {
     font-family: sans-serif;
-    background-color: rgba(59, 23, 23, 0.945);
+    background-color: #16213E;
 }
 
 ul {
@@ -55,7 +49,7 @@ a {
 .container {
     display: grid;
     grid-template-columns: 2fr 1fr;
-    background-color: rgb(59, 23, 23);
+    background-color: #0F3460;
     border-radius: 10px;
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
@@ -63,7 +57,7 @@ a {
     -o-border-radius: 10px;
     min-height: 600px;
     gap: 20px;
-    margin-top: 30px;
+    margin-top: 60px;
 }
 
 @media (max-width:992px) {
@@ -84,7 +78,7 @@ a {
 .right {
     position: relative;
     direction: rtl;
-    padding: 5px;
+    padding: 10px;
 }
 
 .right .overLayer {
@@ -96,12 +90,14 @@ a {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.6);
+    background-color: rgba(0, 0, 0, 0.4);
     border-radius: 5px;
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
     -ms-border-radius: 5px;
     -o-border-radius: 5px;
+    cursor: not-allowed;
+
 }
 
 p {
@@ -111,6 +107,7 @@ p {
     font-weight: 600;
     border: 2px solid white;
     padding: 10px;
+    cursor: default;
 }
 
 ul {
@@ -131,13 +128,13 @@ ul li input {
     width: 100%;
     height: 3px;
     -webkit-appearance: none;
-    background: #333;
+    background: #533483;
     outline: none;
 }
 
 ul li input::-webkit-slider-thumb {
     -webkit-appearance: none;
-    background: #0a85ff;
+    background: #E94560;
     width: 15px;
     height: 15px;
     border-radius: 50%;
@@ -175,7 +172,7 @@ ul li div label {
 
 .control span {
     color: white;
-    background-color: green;
+    background-color: #533483;
     padding: 10px 15px;
     border-radius: 5px;
     -webkit-border-radius: 5px;
@@ -187,7 +184,7 @@ ul li div label {
 
 .control a {
     color: white;
-    background-color: green;
+    background-color: #533483;
     padding: 10px 15px;
     border-radius: 5px;
 
