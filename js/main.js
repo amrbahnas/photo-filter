@@ -11,11 +11,6 @@ let reset = document.querySelector(".control span");
 let download = document.querySelector(".control a");
 let overLayer = document.querySelector(".overLayer");
 
-window.onload = function () {
-    reset.style.display = "none"
-    download.style.display = "none"
-}
-
 upload.addEventListener("change", function () {
     reset.style.display = "block";
     download.style.display = "block";
@@ -48,7 +43,12 @@ filters.forEach((filter) => {
     }
 })
 
-reset.onclick = resetAll();
+
+window.addEventListener("click", function (e) {
+    if (e.target.className == "reset") {
+        resetAll();
+    }
+});
 
 
 function resetAll() {
