@@ -91,3 +91,4 @@ function resetAll() {
 download.onclick = function () {
     download.href = canvas.toDataURL();
 }
+
